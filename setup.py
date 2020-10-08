@@ -15,6 +15,7 @@ setup(
     keywords="hoi3 game",
     url="https://github.com/jDan735/hoi3tools",
     license="MIT",
+    include_package_data=True,
     packages=["hoi3tools"],
     classifiers=[
         "Programming Language :: Python :: 3",
