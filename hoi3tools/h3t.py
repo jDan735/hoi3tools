@@ -3,7 +3,7 @@ from config import dirpath
 from lib import find
 
 
-def main(args):
+def app(args):
     if (args.owner is None and
        args.add_core is None and
        args.controller is None and
@@ -43,7 +43,7 @@ def logo():
     print()
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("prov", type=int, help="Ban")
@@ -56,4 +56,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     logo()
-    main(args)
+    app(args)
+
+
+if __name__ == "__main__":
+    main()
